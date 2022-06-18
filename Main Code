@@ -1,0 +1,159 @@
+#What to add next: ask vegetarian/meat, mood questions, day questions, let them pick their own number of items in each list, add random lists
+
+#Name
+name = input("Hello, what's your name?")
+print("Hello", name, "! Welcome to the 'Pick a Damn Place' program.")
+
+#Instructions (optional)
+Instructions = input("Have you used this program before? Pick y/n on whether you would like instructions")
+if Instructions == "y":
+    print("The 'Pick a Damn Place' program has been used world-wide to help couples, friends, coworkers, or individuals everywhere...to well...pick a damn place.")
+else:
+    print("Skipping instructions....")
+
+#ProgramorRandom
+list = input("Do you want to create your own lists to choose from or do you want to be given pre-determined lists of restaurants around Minneapolis? Respond with either '1' to make your own, or '2' for the already created.")
+if list == "1":
+    
+    #American food list
+    print("We will start with five of your favorite American restaurants.")
+    my_favorite_American = []
+    i = 0
+    while i != 5:
+        A = input("Enter an American restaurant")
+        my_favorite_American.append(A)
+        print(A)
+        i += 1 
+print(my_favorite_American)
+
+#Fix errors in list or start over
+Correct_American = input("Does this list look correct? y/n")
+if Correct_American == "y":
+            print("Wonderful! Let's go to the next list.")
+else:
+    Incorrect_American = input("Oh no! Do you want to fix them or start over? Enter 1 for 'Fix' or 2 for 'Start over.")
+    if Incorrect_American == "1":
+            American_number_incorrect = input("How many are incorrect? Enter 1-5")
+            American_incorrect = int(American_number_incorrect)
+            i = 0
+            for i in range(American_incorrect):
+                Incorrect_American_Fix = input("Which one is the incorrect one? Please write the name of the incorrect restaurant.")
+                Correct_American_Fix = input("Write the restaurant you want to replace it with.")
+                my_favorite_American.remove(Incorrect_American_Fix)
+                my_favorite_American.append(Correct_American_Fix)
+    print(my_favorite_American)
+    else Incorrect_American == "2":
+        my_favorite_American.clear() 
+        i = 0
+        while i != 5:
+            A = input("Enter an American restaurant")
+            my_favorite_American.append(A)
+            print(A)
+            i += 1 
+        print(my_favorite_American)
+    Fixed_American = input("Is this list better? y/n")
+    if Fixed_American == "y":
+        print("Wonderful! Let's go to the next list.")
+    else:
+        print("Press escape/quit and start the program over.")
+
+#Asian food list
+print("We will now add five of your favorite Asian restaurants.")
+my_favorite_Asian = []
+i = 0
+while i != 5:
+        A = input("Enter an Asian restaurant")
+        my_favorite_Asian.append(A)
+        print(A)
+        i += 1 
+print(my_favorite_Asian)
+
+#Fix errors in list or start over
+Correct_Asian = input("Does this list look correct? y/n")
+if Correct_Asian == "y":
+        print("Wonderful! Let's go to the next list.")
+else:
+    Incorrect_Asian = input("Oh no! Do you want to fix them or start over? \nEnter 1 for 'Fix' or 2 for 'Start over.")
+    if Incorrect_Asian == "1":
+            Asian_number_incorrect = input("How many are incorrect? Enter 1-5")
+            Asian_incorrect = int(Asian_number_incorrect)
+            i = 0
+            for i in range(Asian_incorrect):
+                Incorrect_Asian_Fix = input("Which one is the incorrect one? Please write the name of the incorrect restaurant.")
+                Correct_Asian_Fix = input("Write the restaurant you want to replace it with.")
+                my_favorite_Asian.remove(Incorrect_Asian_Fix)
+                my_favorite_Asian.append(Correct_Asian_Fix)
+    print(my_favorite_Asian)
+    Fixed_Asian = input("Is this list better? y/n")
+    if Fixed_Asian == "y":
+        print("Wonderful! Let's go to the next list.")
+    else:
+        print("Press escape/quit and start the program over.")
+
+#Mexican food list
+print("We will now add five of your favorite Mexican restaurants.")
+my_favorite_Mexican = []
+i = 0
+while i != 5:
+        A = input("Enter a Mexican restaurant")
+        my_favorite_Mexican.append(A)
+        print(A)
+        i += 1 
+print(my_favorite_Mexican)
+
+#Fix errors in list or start over
+Correct_Mexican = input("Does this list look correct? y/n")
+if Correct_Mexican == "y":
+        print("Wonderful! Let's go to the next list.")
+else:
+    Incorrect_Mexican = input("Oh no! Do you want to fix them or start over? \nEnter 1 for 'Fix' or 2 for 'Start over.")
+    if Incorrect_Mexican == "1":
+            Mexican_number_incorrect = input("How many are incorrect? Enter 1-5")
+            Mexican_incorrect = int(Mexican_number_incorrect)
+            i = 0
+            for i in range(Mexican_incorrect):
+                Incorrect_Mexican_Fix = input("Which one is the incorrect one? Please write the name of the incorrect restaurant.")
+                Correct_Mexican_Fix = input("Write the restaurant you want to replace it with.")
+                my_favorite_Mexican.remove(Incorrect_Mexican_Fix)
+                my_favorite_Mexican.append(Correct_Mexican_Fix)
+    print(my_favorite_Mexican)
+    Fixed_Mexican = input("Is this list better? y/n")
+    if Fixed_Mexican == "y":
+        print("Wonderful! Let's go to the next list.")
+    else:
+        print("Press escape/quit and start the program over.")
+
+#African food list
+print("We will now add five of your favorite African restaurants.")
+my_favorite_African = []
+i = 0
+while i != 5:
+        A = input("Enter an African restaurant")
+        my_favorite_African.append(A)
+        print(A)
+        i += 1 
+print(my_favorite_African)
+
+#Fix errors in list or start over
+Correct_African = input("Does this list look correct? y/n")
+if Correct_African == "y":
+        print("Wonderful! Let's go to the next list.")
+else:
+    Incorrect_African = input("Oh no! Do you want to fix them or start over? \nEnter 1 for 'Fix' or 2 for 'Start over.")
+    if Incorrect_African == "1":
+            African_number_incorrect = input("How many are incorrect? Enter 1-5")
+            African_incorrect = int(African_number_incorrect)
+            i = 0
+            for i in range(African_incorrect):
+                Incorrect_African_Fix = input("Which one is the incorrect one? Please write the name of the incorrect restaurant.")
+                Correct_African_Fix = input("Write the restaurant you want to replace it with.")
+                my_favorite_African.remove(Incorrect_African_Fix)
+                my_favorite_African.append(Correct_African_Fix)
+    print(my_favorite_African)
+    Fixed_African = input("Is this list better? y/n")
+    if Fixed_African == "y":
+        print("Wonderful! Let's go to the next list.")
+    else:
+        print("Press escape/quit and start the program over.")
+
+
